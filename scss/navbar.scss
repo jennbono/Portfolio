@@ -9,11 +9,11 @@
     color: white;
     border: 0;
     background-color: $primary;
-    @include heading-font;
+    @include headingFont;
   }
   .navbar-brand {
     color: $primary;
-    @include script-font;
+    @include scriptFont;
     &.active,
     &:active,
     &:focus,
@@ -29,10 +29,10 @@
         padding: 0.75em 0;
         letter-spacing: 1px;
         color: white;
-        @include heading-font;
+        @include headingFont;
         &.active,
         &:hover {
-          color: $primary;
+          color: lighten($primary, 10%);
         }
       }
     }

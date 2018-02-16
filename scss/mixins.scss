@@ -1,6 +1,6 @@
 // Mixins
 // Background Cover Mixin
-@mixin background-cover {
+@mixin backgroundCover {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -8,15 +8,15 @@
 }
 
 // Font Mixins
-@mixin serif-font {
+@mixin serifFont {
   font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-@mixin script-font {
+@mixin scriptFont {
   font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
 }
-@mixin body-font {
+@mixin bodyFont {
   font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-@mixin heading-font {
+@mixin headingFont {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }

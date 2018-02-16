@@ -17,7 +17,7 @@
         -moz-transition: all ease 0.5s;
         transition: all ease 0.5s;
         opacity: 0;
-        background: fade-out($primary, .1);
+        background: fade-out($black, .5);
         &:hover {
           opacity: 1;
         }
@@ -54,7 +54,7 @@
         font-size: 16px;
         font-style: italic;
         margin: 0;
-        @include serif-font;
+        @include serifFont;
       }
     }
   }
@@ -62,6 +62,7 @@
     z-index: 2;
   }
 }
+
 @media(min-width:767px) {
   #portfolio {
     .portfolio-item {
@@ -90,7 +91,7 @@
       font-size: 16px;
       font-style: italic;
       margin: 20px 0 30px;
-      @include serif-font;
+      @include serifFont;
     }
     ul.list-inline {
       margin-top: 0;
@@ -137,8 +138,5 @@
         background-color: $gray-900;
       }
     }
-  }
-  .modal-backdrop {
-
   }
 }

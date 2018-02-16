@@ -1,7 +1,20 @@
+// Imports
+@import "variables";
+@import "mixins";
+@import "contact";
+@import "footer";
+@import "masthead";
+@import "navbar";
+@import "portfolio";
+@import "services";
+@import "team";
+@import "timeline";
+
 // Global styling for this template
+
 body {
   overflow-x: hidden;
-  @include body-font;
+  @include bodyFont;
 }
 
 p {
@@ -26,7 +39,7 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-  @include heading-font;
+  @include headingFont;
 }
 
 section {
@@ -42,7 +55,7 @@ section {
     font-style: italic;
     margin-bottom: 75px;
     text-transform: none;
-    @include serif-font;
+    @include serifFont;
   }
 }
 @media(min-width:768px) {
@@ -53,7 +66,7 @@ section {
 
 // Button Styles
 .btn {
-  @include heading-font;
+  @include headingFont;
   font-weight: 700;
 }
 
@@ -64,20 +77,15 @@ section {
 
 .btn-primary {
   background-color: $primary;
-  border-color: $primary;
+  border-color: $white;
   &:active,
   &:focus,
   &:hover {
-    background-color: darken($primary, 7.5%) !important;
-    border-color: darken($primary, 7.5%) !important;
+    background-color: lighten($primary, 5%) !important;
+    border-color: $white !important;
     color: white;
   }
-  &:active,
-  &:focus {
-    box-shadow: 0 0 0 0.2rem rgba(254, 209, 55,.5) !important;
-  }
 }
-
 // Highlight color customization
 ::-moz-selection {
   background: $primary;
